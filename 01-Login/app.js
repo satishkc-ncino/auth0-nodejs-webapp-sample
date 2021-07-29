@@ -12,6 +12,10 @@ var authRouter = require('./routes/auth');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+//var jwt = require('express-jwt'); 
+
+
+
 dotenv.config();
 
 // Configure Passport to use Auth0
@@ -53,7 +57,7 @@ app.use(cookieParser());
 
 // config express-session
 var sess = {
-  secret: 'CHANGE THIS SECRET',
+  secret: 'satishkcf1r8tJWTServer!',
   cookie: {},
   resave: false,
   saveUninitialized: true
